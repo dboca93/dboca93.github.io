@@ -21,16 +21,95 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid whitesmoke;
-    padding: 15px 50px 0px;
+    
+}
+.logo {
+    font-family: "Montserrat", sans-serif;
+    color: #edf0f1;
+    margin-top: 5px;
+    
+
 }
 
 .nav_links li {
     list-style-type: none;
     display: inline-block;
     padding: 0 20px;
-    flex-wrap: nowrap;
+    margin: 0 auto;
 }
-.logo {
+@media only screen and (max-width: 1000px) {
+    .nav_links {
+        display: none;
+    }
+}
+a {
+    transition: color 0 linear 0.1s;
+}
+
+a:hover {
+    color: #ddc09b;
+}
+button {
+    margin: 0 60px;
+    padding: 9px 30px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 7.5px;
+    padding: 5px 7.5px;
+    
+    cursor: pointer;
+    transition: color 0 linear 0.1s;
+}
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+/*This section here is the beginning of the main-banner area. 
+Here, we intend to have a flex-box [row-wrap with space-evenly];
+which details the four main kinds of chauffeured services: 
+Airport Transfer, Corporate Cars, Winery Tours & Privately 
+Chauffeured Trips. We intend to make them have a thick gold-border
+when the box is highlighted.*/
+.main-banner {
+    width: 90%;
+    outline: 1px solid white;
+    margin: 0 auto;
+    padding: 10px 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.tab {
+    margin-top: 15px;
+    cursor: pointer;
+    border: 2px solid #ddc09b;
+    border-radius: 15px;
+}
+.airport-transfer {
+    cursor: pointer;
+    border: 2px solid #ddc09b;
+    border-radius: 15px;
+}
+.corporate-cars {
+    cursor: pointer;
+    border: 2px solid #ddc09b;
+    border-radius: 15px;
+}
+
+
+img {
+    border-radius: 15px 15px 1px 1px;
+}
+
+h4 {
+    
     font-family: "Montserrat", sans-serif;
-    color: #edf0f1;
+    color: #ddc09b;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 15px;
 }
+
+
+
