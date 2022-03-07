@@ -1,13 +1,10 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: #24252A;
 }
-
 li, a, button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -15,29 +12,27 @@ li, a, button {
     color: #edf0f1;
     text-decoration: none;
 }
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid whitesmoke;
+    min-width: 100px;
+    height: auto;
+    /*border-bottom: 1px solid whitesmoke;*/
     
 }
 .logo {
     font-family: "Montserrat", sans-serif;
     color: #edf0f1;
     margin-top: 5px;
-    
-
 }
-
 .nav_links li {
     list-style-type: none;
     display: inline-block;
     padding: 0 20px;
     margin: 0 auto;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1050px) {
     .nav_links {
         display: none;
     }
@@ -45,7 +40,6 @@ header {
 a {
     transition: color 0 linear 0.1s;
 }
-
 a:hover {
     color: #ddc09b;
 }
@@ -71,7 +65,7 @@ Chauffeured Trips. We intend to make them have a thick gold-border
 when the box is highlighted.*/
 .main-banner {
     width: 90%;
-    outline: 1px solid white;
+    /*outline: 1px solid white;*/
     margin: 0 auto;
     padding: 10px 10px;
 
@@ -79,9 +73,8 @@ when the box is highlighted.*/
     flex-flow: row wrap;
     justify-content: space-evenly;
 }
-
 .tab {
-    margin-top: 15px;
+    margin-top: 10px;
     cursor: pointer;
     border: 2px solid #ddc09b;
     border-radius: 15px;
@@ -96,20 +89,79 @@ when the box is highlighted.*/
     border: 2px solid #ddc09b;
     border-radius: 15px;
 }
-
-
 img {
-    border-radius: 15px 15px 1px 1px;
+    border-radius: 15px 15px 3px 3px;
 }
-
 h4 {
-    
     font-family: "Montserrat", sans-serif;
     color: #ddc09b;
     font-size: 24px;
     text-align: center;
     border-radius: 15px;
 }
+/*Here, we intend to make the images smaller on
+screen sizes 420px & smaller*/
+@media only screen and (max-width: 420px) {
+    .main-banner img {
+        width: 300px;
+        height: 200px;
+    }
+   .cta button {
+        margin: 0 60px 0px 0px;
+        font-size: 12.5px;
+    }
+}
+@media only screen and (max-width: 340px) {
+    .main-banner img {
+        width: 270px;
+        height: 180px;
+    }
+}
+/*Cars Page --Styling*/
+.cars-heading, .about-us-heading
+{
+    width: 65%;
+margin: 30px auto 0px auto;
 
+display: flex;
+border-bottom: 1px solid whitesmoke;
+}
+.cars-heading h1, .about-us-heading h1 {
+    font-family: "Montserrat", sans-serif;
+    color: whitesmoke;
+    font-size: 22px;
+    text-align: center;
+  }
+  .cars-desc-para, .au-desc-para {
+    width: 65%;
+    margin: 30px auto 0px auto;
+    text-align: center;
+    display: flex;
+  }
+  .cars-desc-para p, .au-desc-para p {
+    font-family: "Montserrat", sans-serif;
+    color: whitesmoke;
+    text-align: justify;
+  }
+  .cars-flex-gallery {
+    width: 65%;
+    outline: 1px solid white;
+    margin: 10px auto;
+    padding: 10px 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  .image-cont-a img,  .image-cont-b img,  
+  .image-cont-c img {
+    border-radius: 5px;
+    cursor: pointer;
+    outline: 1px solid whitesmoke;
+  }
 
-
+ {
+      border-radius: 5px;
+      cursor: pointer;
+      outline: 1px solid whitesmoke;
+  }
+ 
